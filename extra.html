@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortes e Tratamentos | Salão de Cabeleireiro</title>
+    <style>
+        /* Reset e Escala Compacta */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333333;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+
+        /* Cabeçalho Compacto */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e9ecef;
+            padding: 0.6rem 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1050px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #222222;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555555;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #d15277;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1050px;
+            margin: 1.2rem auto;
+            padding: 0 1rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-header h1 {
+            font-size: 1.5rem;
+            color: #222222;
+            margin-bottom: 0.2rem;
+        }
+
+        .page-header p {
+            color: #666666;
+            font-size: 0.85rem;
+        }
+
+        /* Seções de Serviços */
+        .section-servicos {
+            margin-bottom: 1.8rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            color: #222222;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            border-left: 3px solid #d15277;
+            padding-left: 0.5rem;
+        }
+
+        /* Grade Compacta (4 colunas no desktop) */
+        .grid-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        /* Card Compacto */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 125px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 0.7rem 0.8rem;
+        }
+
+        .card-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #222222;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-desc {
+            font-size: 0.8rem;
+            color: #666666;
+            line-height: 1.3;
+        }
+
+        /* Rodapé Compacto */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffffff;
+            border-top: 1px solid #e9ecef;
+            color: #888888;
+            font-size: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        /* Responsividade */
+        @media (max-width: 900px) {
+            .grid-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Topo / Menu -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Salão & Beleza</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cortes-e-tratamentos.html" class="active">Cortes e Tratamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="container">
+
+        <div class="page-header">
+            <h1>Cortes e Tratamentos</h1>
+            <p>Conheça os serviços disponíveis para cuidar do seu visual.</p>
+        </div>
+
+        <!-- Seção: Cortes -->
+        <section class="section-servicos">
+            <h2 class="section-title">Cortes</h2>
+            <div class="grid-cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=400&auto=format&fit=crop&q=60" alt="Corte Feminino" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Corte Feminino</h3>
+                        <p class="card-desc">Modelos personalizados para valorizar seu formato de rosto e estilo.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=400&auto=format&fit=crop&q=60" alt="Corte Masculino" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Corte Masculino</h3>
+                        <p class="card-desc">Cortes modernos e clássicos na tesoura ou máquina com acabamento fino.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=400&auto=format&fit=crop&q=60" alt="Corte Infantil" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Corte Infantil</h3>
+                        <p class="card-desc">Cuidado, paciência e cortes leves e práticos para os pequenos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&auto=format&fit=crop&q=60" alt="Corte + Escova" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Corte + Escova</h3>
+                        <p class="card-desc">Renovação completa do corte finalizado com escova alinhada e modelada.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção: Tratamentos -->
+        <section class="section-servicos">
+            <h2 class="section-title">Tratamentos</h2>
+            <div class="grid-cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=400&auto=format&fit=crop&q=60" alt="Hidratação" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Hidratação</h3>
+                        <p class="card-desc">Reposição de água nos fios para combater o ressecamento e dar maciez.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&auto=format&fit=crop&q=60" alt="Reconstrução" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Reconstrução</h3>
+                        <p class="card-desc">Recuperação da massa capilar e fortalecimento de cabelos fragilizados.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&auto=format&fit=crop&q=60" alt="Nutrição" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Nutrição</h3>
+                        <p class="card-desc">Banho de óleos para selagem das cutículas, brilho intenso e controle de frizz.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&auto=format&fit=crop&q=60" alt="Escova" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Escova</h3>
+                        <p class="card-desc">Lavagem especial seguida de modelagem lisa ou ondulada duradoura.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Salão de Cabeleireiro. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
